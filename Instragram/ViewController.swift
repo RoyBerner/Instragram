@@ -14,17 +14,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        /*
+       let tweet = PFObject(className: "Tweet")
         
-        let gameScore = PFObject(className:"GameScore")
-        gameScore["score"] = 1337
-        gameScore["playerName"] = "Sean Plott"
-        gameScore["cheatMode"] = false
-        gameScore.saveInBackground {
-            (success: Bool, error: Error?) in
+        tweet["content"] = "Good morning world!"
+        
+        tweet.saveInBackground { (success, error) in
             if (success) {
-                print("succes")
+                print("success")
             } else {
                 print("failed")
+            }
+        }
+ */
+        
+        let query = PFQuery(className: "Tweet")
+        
+        query.getObjectInBackground(withId: "MxPHSjmPV8") { (object, error) in
+            
+            if let tweet = object {
+                print(tweet)
+            } else {
+                print("retrieve failed")
             }
         }
     }
