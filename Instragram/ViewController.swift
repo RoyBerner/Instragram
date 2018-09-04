@@ -75,6 +75,8 @@ class ViewController: UIViewController {
                         // Hooray! Let them use the app now.
                         
                         print("Signed up!")
+                        
+                        self.performSegue(withIdentifier: "showUserTable", sender: self)
                     }
                 })
                 
@@ -89,6 +91,7 @@ class ViewController: UIViewController {
                     
                     if user != nil {
                         print("Login successful")
+                        self.performSegue(withIdentifier: "showUserTable", sender: self)
                     } else {
                         
                         var errorText = "Uknown error please try again"
@@ -126,6 +129,16 @@ class ViewController: UIViewController {
     
         
    
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if PFUser.current() != nil {
+            
+        
+        performSegue(withIdentifier: "showUserTable", sender: self)
+        }
+        
+        self.navigationController?.navigationBar.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
