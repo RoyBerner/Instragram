@@ -15,6 +15,7 @@
 		20F9F954213AFCFF00722B07 /* InstragramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9F953213AFCFF00722B07 /* InstragramTests.swift */; };
 		20F9F95F213AFCFF00722B07 /* InstragramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9F95E213AFCFF00722B07 /* InstragramUITests.swift */; };
 		20F9F9E1213D4D3F00722B07 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9F9E0213D4D3F00722B07 /* UserTableViewController.swift */; };
+		20F9F9E32141B42800722B07 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9F9E22141B42800722B07 /* PostViewController.swift */; };
 		CC50DD4FD846A5F6A35B10AE /* Pods_Instragram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C050E2CBEACF16FFD38976 /* Pods_Instragram.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		20F9F95E213AFCFF00722B07 /* InstragramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstragramUITests.swift; sourceTree = "<group>"; };
 		20F9F960213AFCFF00722B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F9F9E0213D4D3F00722B07 /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		20F9F9E22141B42800722B07 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		C107CA60411116834EC34986 /* Pods-Instragram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instragram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instragram/Pods-Instragram.release.xcconfig"; sourceTree = "<group>"; };
 		D1C050E2CBEACF16FFD38976 /* Pods_Instragram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instragram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B8B5844FF42C8333C3C0A2 /* Pods-Instragram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instragram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instragram/Pods-Instragram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				20F9F93E213AFCFD00722B07 /* AppDelegate.swift */,
 				20F9F940213AFCFD00722B07 /* ViewController.swift */,
 				20F9F942213AFCFD00722B07 /* Main.storyboard */,
+				20F9F9E22141B42800722B07 /* PostViewController.swift */,
 				20F9F9E0213D4D3F00722B07 /* UserTableViewController.swift */,
 				20F9F945213AFCFF00722B07 /* Assets.xcassets */,
 				20F9F947213AFCFF00722B07 /* LaunchScreen.storyboard */,
@@ -326,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F9F9E32141B42800722B07 /* PostViewController.swift in Sources */,
 				20F9F941213AFCFD00722B07 /* ViewController.swift in Sources */,
 				20F9F9E1213D4D3F00722B07 /* UserTableViewController.swift in Sources */,
 				20F9F93F213AFCFD00722B07 /* AppDelegate.swift in Sources */,
